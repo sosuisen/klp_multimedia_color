@@ -6,13 +6,13 @@ redField.value = greenField.value = blueField.value = 0;
 /**
  * 10進数16進数変換
  */
+// 簡略化していないアロー関数
 const decToHex = (dec) => {
     return parseInt(dec).toString(16).padStart(2, '0');
 };
 
-const hexToDec = (hex) => {
-    return parseInt(hex, 16);
-};
+// 1行に簡略化したアロー関数
+const hexToDec = hex => parseInt(hex, 16);
 
 /**
  * 色を反映
