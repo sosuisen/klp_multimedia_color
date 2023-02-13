@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>色彩の練習</title>
+    <link href="color.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>色彩の練習</h1>
+
+    <h2>HTML5のビルトインカラーピッカー</h2>
+
+    <p>
+    <input type="color"><br>
+    上の四角をクリックすると色が選べます<br>
+    このようなカラーピッカーをプログラムで作ってみましょう
+    </p>
+
+    <hr>
+
+    <h2>オリジナルカラーピッカー</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th style="color: red">Red</th>
+                <th style="color: green">Green</th>
+                <th style="color: blue">Blue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10進数</td>
+                <td><input id="redField"></td>
+                <td><input id="greenField"></td>
+                <td><input id="blueField"></td>
+                <td style="border: none;">半角で数字を入力してください(0-255)</td>
+            </tr>
+            <tr>
+                <td>16進数</td>
+                <td><input id="redFieldHex" value="00"></td>
+                <td><input id="greenFieldHex" value="00"></td>
+                <td><input id="blueFieldHex" value="00"></td>
+                <td style="border: none;">半角で16進数2桁を入力してください(00-ff)</td>
+            </tr>
+            <tr>
+                <td>単色</td>
+                <td>
+                    <div id="redArea" class="singleColorArea"></div>
+                </td>
+                <td>
+                    <div id="greenArea" class="singleColorArea"></div>
+                </td>
+                <td>
+                    <div id="blueArea" class="singleColorArea"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="colorArea"></div>
+
+    <script src="color.js"></script>
+</body>
+
+</html>

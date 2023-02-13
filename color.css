@@ -1,0 +1,38 @@
+body {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 18px;
+    background-color: #cccccc;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+th,
+td {
+    border: 1px solid #000000;
+    
+}
+
+thead {
+    background-color: #ccc;     /* #cccccc の省略形 */
+}
+
+.singleColorArea {
+    width: 50px;
+    height: 20px;
+}
+
+input {
+    width: 40px;
+}
+
+#colorArea {
+    background-color: #000; /* #000000 の省略形 */
+    border: 1px solid black; /* 色名で指定 */
+    width: 200px;
+    height: 200px;
+}
