@@ -10,10 +10,8 @@ const blueFieldHex = document.getElementById('blueFieldHex');
 /**
  * 10進数16進数変換
  */
-// 簡略化していないアロー関数
-const decToHex = (dec) => {
-    return parseInt(dec).toString(16).padStart(2, '0');
-};
+// 基本課題2： 1行に簡略化したアロー関数
+const decToHex = dec => parseInt(dec).toString(16).padStart(2, '0');
 
 // 1行に簡略化したアロー関数
 const hexToDec = hex => parseInt(hex, 16);
@@ -22,7 +20,9 @@ const hexToDec = hex => parseInt(hex, 16);
  * 色を反映
  */
 const updateColorArea = (red, green, blue) => {
-    document.getElementById('colorArea').style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+    // 発展課題2a：グレースケール表示
+    const avr = (parseInt(red) + parseInt(green) + parseInt(blue))/3;
+    document.getElementById('colorArea').style.backgroundColor = `rgb(${avr}, ${avr}, ${avr})`;
     document.getElementById('redArea').style.backgroundColor = `rgb(${red}, 0, 0)`;
     document.getElementById('greenArea').style.backgroundColor = `rgb(0, ${green}, 0)`;
     document.getElementById('blueArea').style.backgroundColor = `rgb(0, 0, ${blue})`;
