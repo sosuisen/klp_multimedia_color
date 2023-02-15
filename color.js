@@ -3,6 +3,10 @@ const greenField = document.getElementById('greenField');
 const blueField = document.getElementById('blueField');
 redField.value = greenField.value = blueField.value = 0;
 
+const redFieldHex = document.getElementById('redFieldHex');
+const greenFieldHex = document.getElementById('greenFieldHex');
+const blueFieldHex = document.getElementById('blueFieldHex');
+
 /**
  * 10進数16進数変換
  */
